@@ -1,23 +1,49 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import eplTable from '@/components/eplTable.vue'
+import totalLeagues from '@/components/totalLeagues'
+import laliga from '@/views/laliga'
+import laliga2 from '@/views/laliga2'
+import bundesliga from '@/views/bundesliga'
+import Bundesliga2 from '@/views/Bundesliga2'
+
+
 
 Vue.use(VueRouter)
 
 const routes = [
+ {
+   path:'/',
+   component:Home
+ },
+ 
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path:'/epltable',
+    component:eplTable
+
+  },
+   {
+    path:'/leagues',
+    component:totalLeagues
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path:'/laliga',
+    component:laliga
+  },
+  {
+    path:'/Bundesliga',
+    component:bundesliga
+  },
+  {
+    path:'/Bundesliga2',
+    component:Bundesliga2
+  },
+  {
+    path:'/laliga2',
+    component:laliga2
   }
+  
 ]
 
 const router = new VueRouter({
