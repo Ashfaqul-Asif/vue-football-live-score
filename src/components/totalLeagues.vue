@@ -1,7 +1,7 @@
 <template>
 <div>
      <h2 class="my-6">Live Score Available</h2>
-     <div class="d-flex flex-wrap my-auto mt-3 justify-space-between">
+     <div class="d-flex flex-wrap my-auto mt-3 px-1 py-2 justify-space-between">
         <div v-for="(category,index) in Categories" :key="index">
           <router-link :to="category.path">
           <v-card  elevation="0" height="65px" width="76px">

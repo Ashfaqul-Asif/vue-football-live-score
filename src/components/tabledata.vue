@@ -6,7 +6,7 @@
         
         <tr v-for="(item,index) in filterEachGameWeeks.matches" :key="index">
           <td class="text-right">{{item.team1.name}}</td>
-          <td class="text-middle" style="text-align: center;">{{item.score1}}-{{item.score2}}</td>
+          <td class="text-middle score" style="text-align: center;">{{item.score1}}-{{item.score2}}</td>
           <td >{{item.team2.name}}</td>
         </tr>
       </tbody>
@@ -43,6 +43,15 @@ import {mapGetters,mapActions} from 'vuex'
 </script>
 
 <style scoped>
+
+
+
+@media (min-width: 300px) and (max-width: 470px) {
+  .score{
+  padding: 0px !important;
+  width:  20px !important;
+}
+}
 
 </style>
 
