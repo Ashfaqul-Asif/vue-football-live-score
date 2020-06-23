@@ -3,12 +3,12 @@
     dark
     padless
   >
-    <v-card
+    <v-card style="width:100%"
       flat
       tile
       class="green  white--text text-center"
     >
-      <v-card-text>
+      <v-card-text >
         <v-btn
           v-for="icon in icons"
           :key="icon"
@@ -19,7 +19,7 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="white--text pt-0">
+      <v-card-text class="white--text mb-3">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga delectus aut inventore! Ad, numquam quasi. Nemo voluptatibus et debitis, soluta molestias itaque unde rerum nostrum delectus, hic, vitae commodi ipsum.
       </v-card-text>
     </v-card>
